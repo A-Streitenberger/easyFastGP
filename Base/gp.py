@@ -47,7 +47,7 @@ class GP():
         if self.best_last_gen is None:
             raise Exception("The model must be trained before the prediction!")
 
-        return evaluate_postorder(self.best_last_gen.program.nodes, self.X)
+        return evaluate_postorder(self.best_last_gen.program.nodes, X)
 
     def __prepare_calculation(self, X, y):
         self.__init_terminals_set(X)
