@@ -22,7 +22,7 @@ degree in computer science. The following goals were taken into account during t
       nodes have already been successfully tested.
 
 <figure style="text-align:center;">
-<img src="tree_repr.png" style="max-width: 500px;">
+<img src="tree_repr.png" style="max-width: 350px;">
 <figcaption>
 <i>Used postorder tree representation</i>
 </figcaption>
