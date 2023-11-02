@@ -25,13 +25,13 @@ function_set = Dict.empty(
 )
 
 # add
-function_set[90.0] = 2
+function_set[90] = 2
 # sub
-function_set[91.0] = 2
+function_set[91] = 2
 # mult
-function_set[92.0] = 2
+function_set[92] = 2
 # div
-function_set[93.0] = 2
+function_set[93] = 2
 
 
 class Program:
