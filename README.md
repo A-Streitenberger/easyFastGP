@@ -15,7 +15,12 @@ degree in computer science. The following goals were taken into account during t
     - Initialisation, selection, crossover, mutation and fitness calculation can be easily replaced or extended. The
       following schematic diagram shows the different components of the implementation.
 
-      `will follow`
+      <figure>
+      <img src="overview.png" width=500px>
+      <figcaption>
+      <i>Main components</i>
+      </figcaption>
+      </figure>
 
 
 2. Processing of large and deep trees
