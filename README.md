@@ -9,6 +9,7 @@ better performance. Designed for processing large and deep trees.
 designed to solve symbolic regression problems. The implementation was created as part of a project in my master's
 degree in computer science. The following goals were taken into account during the development:
 
+
 1. Modular structure
     - *easyFastGP* is modular and can be used as a basis for various experiments with GPs.
     - Initialisation, selection, crossover, mutation and fitness calculation can be easily replaced or extended. The
@@ -16,17 +17,12 @@ degree in computer science. The following goals were taken into account during t
 
       `will follow`
 
+
 2. Processing of large and deep trees
     - Due to problems such as bloat and introns, trees can grow fast in GPs. The implementation uses a post-order
       representation in which functions and terminals are represented as specific IDs. Depths of 2000 with 1 million
       nodes have already been successfully tested.
 
-<figure style="text-align:center;">
-<img src="tree_repr.png" style="max-width: 350px;">
-<figcaption>
-<i>Used postorder tree representation</i>
-</figcaption>
-</figure>
 
 3. Good performance
     - Normally, the tree evaluation takes up most of the total runtime. Due to the chosen tree encoding, the trees in
@@ -53,6 +49,13 @@ There are two examples (a real problem and a synthetic problem) in the folder `e
 The parameters of a GP run can all be found in the `parameters.py` file.
 
 ### Tree definition
+<figure>
+<img src="tree_repr.png" width=500px>
+<figcaption>
+<i>Used postorder tree representation</i>
+</figcaption>
+</figure>
+
 The tree representation requires some work when new functions are added. Currently there are: add (*ID 90*), sub (*ID
 91*), mult (*ID 92*) and div (*ID 93*). Terminals and functions are identified by special IDs which are set in
 program.py. If a new function needs to be added, function_set must first be adjusted with the special identification of
